@@ -7,6 +7,24 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+
+## Install Socialite
+##  $ composer require laravel/socialite
+## To hook Socialite into your Laravel application, edit config/app.php and add the following line to the Service Providers array:
+
+## add following lines in config/app.php in providers
+## Laravel\Socialite\SocialiteServiceProvider::class,
+
+## and add the following line to the Aliases array:
+
+## 'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+## Socialite is now hooked into your application and booting. Let's get your credentials set up.
+
+<p align="center">
+
+<a href="https://laravel.com/docs/5.5/socialite">Other Wise See the Documentation link</a>
+<p>
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
@@ -56,3 +74,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
